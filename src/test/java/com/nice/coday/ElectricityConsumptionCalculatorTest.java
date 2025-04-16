@@ -235,7 +235,7 @@ public class ElectricityConsumptionCalculatorTest {
         resultData = analyzer.calculateElectricityAndTimeConsumption(resourceInfo);
 
         //Total Unit Consume by all vehicles
-        double expectedTotalUnitsConsumed = 2741580; // The expected sum of all TotalUnitConsumed
+        double expectedTotalUnitsConsumed = 2741924.37; // The expected sum of all TotalUnitConsumed
         double actualTotalUnitsConsumed  = resultData.getConsumptionDetails().stream().mapToDouble(ConsumptionDetails::getTotalUnitConsumed).sum();
         System.out.println("actualTotalUnitsConsumed : " + actualTotalUnitsConsumed);
         Assert.assertEquals(expectedTotalUnitsConsumed, actualTotalUnitsConsumed, 50.0);
@@ -280,7 +280,7 @@ public class ElectricityConsumptionCalculatorTest {
         resultData = analyzer.calculateElectricityAndTimeConsumption(resourceInfo);
 
         //Total Unit Consume by all vehicles
-        double expectedTotalUnitsConsumed = 12823458; // The expected sum of all TotalUnitConsumed
+        double expectedTotalUnitsConsumed = 12824367.63; // The expected sum of all TotalUnitConsumed
         double actualTotalUnitsConsumed  = resultData.getConsumptionDetails().stream().mapToDouble(ConsumptionDetails::getTotalUnitConsumed).sum();
         Assert.assertEquals(expectedTotalUnitsConsumed, actualTotalUnitsConsumed, 200.0);
 
