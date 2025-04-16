@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.nice.coday.ElectricityConsumptionCalculatorTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 4.179 s <<< FAILURE! - in com.nice.coday.ElectricityConsumptionCalculatorTest
+test6(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.838 s  <<< FAILURE!
+java.lang.AssertionError: expected:<2741580.0> but was:<2741924.37>
+	at com.nice.coday.ElectricityConsumptionCalculatorTest.test6(ElectricityConsumptionCalculatorTest.java:241)
+
+test7(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 2.184 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1.2823458E7> but was:<1.2824367629999999E7>
+	at com.nice.coday.ElectricityConsumptionCalculatorTest.test7(ElectricityConsumptionCalculatorTest.java:285)
+

@@ -1,0 +1,24 @@
+modules = ["java-graalvm22.3"]
+run = "mvn clean install"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "mvn clean install"]
+
+[workflows]
+runButton = "Build and Test"
+
+[[workflows.workflow]]
+name = "Build and Test"
+author = 18298668
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "mvn clean install"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "mvn test"
